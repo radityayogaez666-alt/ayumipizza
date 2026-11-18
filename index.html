@@ -24,14 +24,14 @@
           <label class="hanya-pembaca-layar" for="input-cari">Cari Menu</label>
           <input type="search" id="input-cari" autocomplete="off" />
           <button type="submit" class="tombol-cari">
-            <img src="images.png" alt="" width="16" height="16" />
+            <img src="pencarian-removebg-preview.png" alt="" width="20" height="20" />
             <span>Cari</span>
           </button>
         </form>
 
         <nav class="navigasi" aria-label="Navigasi utama">
           <a href="#/keranjang" data-nav="keranjang" class="nav-keranjang">
-            <img src="pngtree-shopping-cart-icon-image_1166717.jpg" alt="" width="20" height="20" />
+            <img src="ikon keranjang.png" alt="" width="30" height="30" />
             <span>keranjang</span>
             <span class="button" id="lencana-keranjang">0</span>
           </a>
@@ -43,12 +43,12 @@
 
     <main class="wadah">
       <section id="halaman-katalog">
-        <h1 class="hanya-pembaca-layar">Katalog menu Mixue</h1>
+        <h1 class="hanya-pembaca-layar">Katalog menu Ayumi Pizza</h1>
 
         <div class="tata-katalog">
           <aside class="sisi" aria-label="Kategori menu">
             <h2 class="sisi-judul">
-              <img src="" alt="" width="16" height="16" />
+              <img src="ikon menuu.png" alt="" width="25" height="25" />
               Kategori menu
             </h2>
             <div class="Kategori">
@@ -168,12 +168,21 @@
         <p class="pesan-galat">Username wajib diisi.</p>
       </div>
 
-      <div class="kolom-isian">
-        <label for="isian-password">Password</label>
-        <input type="password"id="isian-password"autocomplete="current-password"required/>
-        <p class="pesan-galat">Password wajib diisi.</p>
-        <p class="pesan-galat" id="login-salah" hidden>Username atau password salah.</p>
-      </div>
+      <div class="kolom-isian kolom-password">
+
+        <label for="isian-password">Password</label> 
+        <input type="password" id="isian-password" autocomplete="current-password" required> 
+        <button type="button" class="tombol-password" id="tombol-password" aria-label="Tampilkan password" aria-controls="isian-password" aria-pressed="false" title="Tampilkan password">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+                <path class="garis-coret-mata" d="M3 3 21 21"></path>
+            </svg>
+        </button>
+        <p class="pesan-galat">Password wajib diisi.</p> 
+        <p class="pesan-galat" id="login-salah" hidden>Username atau password salah.</p> 
+    </div>
+    
       <button type="submit"class="tombol tombol-utama tombol-lebar tombol-kirim">Masuk</button>
       <a class="masuk-kembali" href="#/">Kembali ke katalog</a>
     </form>
